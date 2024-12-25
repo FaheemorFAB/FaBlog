@@ -1,0 +1,194 @@
+/* Global Styles */
+/* Favicon Circular Style */
+link[rel="icon"] {
+    border-radius: 50%;
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+}
+
+/* Hyperlink Styles */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 16px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-links a {
+    margin-left: 16px;
+    font-size: 1.25rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: #d1d1d1; /* Slightly lighter for hover effect */
+}
+
+/* Hero Section */
+section#hero {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+section#hero p {
+    font-size: 1.125rem;
+    color: black;
+    margin-top: 12px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sections */
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+section {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+
+/* Grid Sections */
+.grid a {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    color: black;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.grid a:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f5f5f5; /* Subtle hover background */
+}
+
+.grid a h3, 
+.grid a p {
+    color: black; /* Ensures grid text remains black */
+}
+
+.grid a:hover h3, 
+.grid a:hover p {
+    color: black; /* Maintains color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 16px;
+    text-align: center;
+}
+
+/* Dark Mode Styles */
+.dark body {
+    background-color: black;
+    color: white;
+}
+
+.dark a {
+    color: rgb(43, 255, 1);
+}
+
+.dark a:hover {
+    color: #d1d1d1; /* Slight hover effect in dark mode */
+}
+
+.dark header {
+    background-color: rgb(0, 0, 0); /* Reversed aesthetic for header */
+    color: rgb(119, 255, 0);
+}
+
+.dark section#hero {
+    background-color: black;
+    color: rgb(174, 255, 0); /* Corrected dark mode text color */
+}
+
+.dark section#hero h2 {
+    color: green; /* Updated to green for dark mode */
+}
+
+.dark section {
+    background-color: black; /* Ensures the entire section container is black in dark mode */
+    color: rgb(43, 255, 1); /* Consistent text color for dark mode */
+    border-bottom: 1px solid rgb(60, 255, 0); /* Subtle border for separation */
+}
+
+/* Welcome, Stories, Blogs Headings */
+.dark section h2 {
+    color: rgb(43, 255, 1); /* Ensures heading color matches the section text */
+    
+}
+.dark section p {
+    color: rgb(43, 255, 1); /* Apply the same green color to the paragraph tag */
+}
+
+
+/* Grid Sections (Dark Mode) */
+.dark .grid a {
+    background-color: black;
+    color: rgb(6, 255, 6); /* Neon green for dark mode text */
+    border: 1px solid #ffffff;
+    box-shadow: none;
+}
+
+.dark .grid a:hover {
+    background-color: #ffffff; /* Subtle hover effect for dark mode */
+    color: black; /* Inverts text color on hover */
+}
+
+.dark .grid a h3, 
+.dark .grid a p {
+    color: rgb(6, 255, 6); /* Explicitly ensures neon green text */
+}
+
+.dark .grid a:hover h3, 
+.dark .grid a:hover p {
+    color: black; /* Ensures text changes to black on hover */
+}
+
+/* Footer Styles (Dark Mode) */
+.dark footer {
+    background-color: #1b1b1b; /* Darker footer background */
+    color: rgb(60, 255, 0);
+}
